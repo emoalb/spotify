@@ -1,0 +1,13 @@
+{{>header}}
+<section id="mySongsView">
+    <div class="background-spotify">
+        <div class="song-container">
+        {{#each songs}}
+            {{> song}}
+        {{else}}
+            <p class="no-songs">You haven't created any songs yet.</p>
+        {{/each}}
+        </div>
+    </div>
+</section>
+{{>footer}}
